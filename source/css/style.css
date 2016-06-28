@@ -1,0 +1,8 @@
+.solomon-background{
+  background: url('/img/background.jpg') center / cover;
+}
+
+.mdl-layout__header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
