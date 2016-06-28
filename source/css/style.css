@@ -6,3 +6,20 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
+
+.c1 {
+  background: url('/img/1.png') center / cover;
+}
+
+.mdl-card__title {
+	max-width: 500px;
+	min-width: 300px;
+	max-height: 250px;
+	min-height: 150px;
+}
+
+.mdl-card__title-text {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-weight: 600;
+}
