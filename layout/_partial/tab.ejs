@@ -1,0 +1,10 @@
+<a href="/" class="mdl-layout__tab is-active">Index</a>
+<% if (site.categories.length){ %>
+        <%- list_categories(site.categories, {
+            show_count: false,
+            class: 'mdl-layout__tab category',
+            style: 'none',
+            separator: ''
+        }) %>
+<% } %>
+<a href="/About" class="mdl-layout__tab">About</a>

@@ -1,18 +1,15 @@
 <header class="mdl-layout__header">
 	<div class="mdl-layout__header-row mdl-layout-title">Solomon</div>
 	<div class="mdl-layout__header-row solomon-subtitle">Alex Lin's Blog</div>
-	<div class="mdl-layout__tab mdl-js-ripple-effect mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link is-active" href="#tab1">Home</a>
-        <a class="mdl-navigation__link" href="#tab2">Android</a>
-        <a class="mdl-navigation__link" href="#tab3">Web</a>
-        <a class="mdl-navigation__link" href="#tab4">Miscellany</a>
-	</div>
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <%- partial('/tab') %>
+    </div>
 </header>
-<div class="mdl-layout__drawer mdl-layout--small-screen-only">
-    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+<!-- <div class="mdl-layout__drawer mdl-layout- -small-screen-only mdl-layout- -large-screen-only">
+    <nav class="mdl-navigation mdl-typography- -body-1-force-preferred-font">
         <a class="mdl-navigation__link is-active" href="#tab1">Home</a>
         <a class="mdl-navigation__link" href="#tab2">Android</a>
         <a class="mdl-navigation__link" href="#tab3">Web</a>
         <a class="mdl-navigation__link" href="#tab4">Miscellany</a>
     </nav>
-</div>
+</div> -->

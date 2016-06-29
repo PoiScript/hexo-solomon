@@ -1,7 +1,5 @@
-<div class="mdl-layout__tab-panel is-active" id="tab1">
-	<div class="mdl-grid">
-    	<% site.posts.sort("date", "desc").each(function(post){ %> 
-            <%- partial("_partial/post_entry", {post: post}) %> 
-    	<% }) %>
-	</div>
+<div class="mdl-grid">
+	<% site.posts.sort("date", "desc").each(function(post){ %>
+		<%- partial("_partial/post_entry", {post: post}) %> 
+	<% })>
 </div>
