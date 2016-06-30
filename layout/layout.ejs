@@ -3,8 +3,10 @@
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<%- partial('_partial/header') %>
 		<main>
-			<%- body %>
-			<%- partial('_partial/footer') %>
+			<div class="mdl-grid">
+				<%- body %>
+			</div>
 		</main>
+		<%- partial('_partial/footer') %>
 	</div>
 </body>
