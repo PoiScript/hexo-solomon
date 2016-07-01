@@ -1,3 +1,39 @@
-<%- partial('_partial/head') %>
-<p class="mdl-shadow--4dp"><%- page.title %></p>
-<%- page.content %>
+<!-- <div class="mdl-shadow--4dp mdl-card max-width mdl-cell--12-col">
+	<div class="mdl-card__title">
+		<h2 class="mdl-card__title-text"></h2>
+	</div>
+	<div class="mdl-card__media">
+		<img class="article-image" src="/img/recent.jpg" border="0" alt="">
+	</div>
+	<div class="mdl-card__supporting-text">
+		<p><%- page.content %></p>
+	</div>
+</div> -->
+<div class="mdl-card mdl-shadow--4dp mdl-cell--12-col max-width">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><%- page.title %></h3>
+            </div>
+            <div class="mdl-card__supporting-text meta">
+              <div class="minilogo"></div>
+              <div>
+                <strong><%- page.categories %></strong>
+                <span>2 days ago</span>
+              </div>
+<!--               <div class="section-spacer"></div>
+              <div class="meta__favorites">
+                425 <i class="material-icons" role="presentation">favorite</i>
+                <span class="visuallyhidden">favorites</span>
+              </div>
+              <div>
+                <i class="material-icons" role="presentation">bookmark</i>
+                <span class="visuallyhidden">bookmark</span>
+              </div>
+              <div>
+                <i class="material-icons" role="presentation">share</i>
+                <span class="visuallyhidden">share</span>
+              </div> -->
+            </div>
+            <div class="mdl-card__supporting-text">
+            	<%- page.content %>
+            </div>
+          </div>

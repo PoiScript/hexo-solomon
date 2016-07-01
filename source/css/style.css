@@ -29,7 +29,16 @@
 }
 
 .headline {
+/*  display: block;
   max-height: 250px;
+  max-width: 900px;*/
+  width: 100%;
+  height: auto;
+}
+
+img.article-image {
+  width: 100%;
+  height: auto;
 }
 
 .mdl-card__title-text {
