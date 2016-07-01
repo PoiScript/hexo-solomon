@@ -18,17 +18,21 @@
   background: url('/img/1.png') center / cover;
 }
 
-.mdl-card__title {
+.card-title {
 	max-width: 500px;
 	min-width: 300px;
 	max-height: 250px;
 	min-height: 150px;
-}
-
-.mdl-card__title-text {
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
   font-weight: 600;
+}
+
+.headline {
+  max-height: 250px;
+}
+
+.mdl-card__title-text {
 }
 
 .mdl-layout__navigation {
@@ -38,4 +42,17 @@
 	width: 100%;
 	bottom: 0;
 	left: 0
+}
+
+.max-width {
+  max-width: 900px;
+  margin: auto;
+}
+
+.recent-post-grid {
+  max-width: 800px;
+}
+
+.mdl-mega-footer__middle-section {
+  margin: auto;
 }

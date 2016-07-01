@@ -1,16 +1,23 @@
-<!-- <div class="mdl-cell mdl-card mdl-shadow- -4dp article-card">
-	<% if (site.posts.length){ %>
-	<% site.posts.sort('categories', -1).limit(3).each(function(post){ %>
-	<div class="mdl-card__title c1">
-		<h2 class="mdl-card__title-text"><%- post.title %></h2>
+<% if (site.posts.length){ %>
+	<div class="mdl-card__title">
+		<h2 class="mdl-card__title-text">Recent Post</h2>
+	</div>
+	<div class="mdl-card__media">
+		<img class="article-image" src="/img/recent.jpg" border="0" alt="">
 	</div>
 	<div class="mdl-card__supporting-text">
-		<p><%- post.date.format("M/DD") %> ▸ <%- partial('post/category') %> </p>
-		<p><%- post.content %></p>
+		<strong>Includes</strong>
+		<span>Design, UX and Frontend Development</span>
 	</div>
-		<div class="mdl-card__actions mdl-card- -border">
-			<a class="mdl-button mdl-button- -colored mdl-js-button mdl-js-ripple-effect mdl-button- -accent" href="<%- config.root %><%- post.path %>">Read more</a>
-		</div>
-	<% }) %>
+	<div class="mdl-grid recent-post-grid">
+		<% site.posts.sort('date', -1).limit(3).each(function(post){ %>
+		<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline"><%- post.title %></h3>
+			<div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
+				<p><%- post.content %></p>
+			</div>
+			<div class="mdl-cell mdl-cell--6-col">
+				<img class="article-image" src="img/Solomon.jpg" border="0" alt="">
+			</div>
+		<% }) %>
+	</div>
 <% } %>
-</div> -->
