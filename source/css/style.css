@@ -55,7 +55,8 @@ img.article-image {
 
 .max-width {
   max-width: 900px;
-  margin: auto;
+  width: 100%;
+
 }
 
 .recent-post-grid {
@@ -116,3 +117,69 @@ img.article-image {
 #article-nav-older {
   text-align: right;
 }
+
+.index {
+  padding-top: 166px;
+  margin: auto;
+}
+
+.demo-blog .something-else .mdl-card__media {
+  font-size: 13px;
+  font-weight: 500;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.logo {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: url('/img/logo.png') center;
+  background-repeat: no-repeat;
+}
+
+.demo-navigation-link {
+  width: 100%;
+  text-align: center;
+  height: 64px;
+  line-height:64px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.vertical-navigation{
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  -webkit-align-items:stretch;
+  -ms-flex-align:stretch;
+  -ms-grid-row-align:stretch;
+  align-items:stretch;
+}
+
+.category-name{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.c2{
+  background: url('/img/android.png') center;
+  background-repeat: no-repeat;
+}
+
+.c3{
+  background: url('/img/frontend.png') center;
+  background-repeat: no-repeat;
+}
+
+.c4{
+  background: url('../assets/demos/image_card.jpg') center / cover;
+}
+/*.logo-card .mdl-card__supporting-text {
+    background-color: #F5F5F5;
+}*/
