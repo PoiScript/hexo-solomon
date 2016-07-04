@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/css/font/material-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(/css/font/material-icons/MaterialIcons-Regular.woff2) format('woff2'),
+       url(/css/font/material-icons/MaterialIcons-Regular.woff) format('woff'),
+       url(/css/font/material-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
 .solomon-background{
   background: url('/img/background.jpg') center / cover;
 }
@@ -183,3 +195,37 @@ img.article-image {
 /*.logo-card .mdl-card__supporting-text {
     background-color: #F5F5F5;
 }*/
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.book-list {
+  margin: 0;
+  padding: 0;
+}
+
+.book-icon {
+  margin-right: 16px !important;
+}
