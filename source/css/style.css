@@ -229,3 +229,8 @@ img.article-image {
 .book-icon {
   margin-right: 16px !important;
 }
+
+.recent {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);  
+}
