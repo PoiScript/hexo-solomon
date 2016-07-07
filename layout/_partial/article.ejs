@@ -1,22 +1,25 @@
 <div class="demo-back">
-	<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" 
-		href="javascript:history.back(-1)" title="go back" role="button">
-            <i class="material-icons" role="presentation">arrow_back</i>
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
-        </div>
-<div class="mdl-card mdl-shadow--4dp mdl-cell--12-col max-width">
-	<div class="mdl-card__media mdl-color-text--grey-50">
-		<h3><%- page.title %></h3>
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" 
+			href="javascript:history.back(-1)" title="go back" role="button">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
 	</div>
-	<div class="mdl-card__supporting-text meta">
-		<div class="minilogo"></div>
-		<div>
-			<strong><%- partial('post/category') %></strong>
-			<span>2 days ago</span>
+	<div class="mdl-card mdl-shadow--4dp mdl-cell--12-col max-width">
+		<div class="mdl-card__media mdl-color-text--grey-50">
+			<h3><%- page.title %></h3>
 		</div>
+		<div class="mdl-card__supporting-text meta">
+			<div class="minilogo"></div>
+			<div>
+				<strong><%- partial('post/category') %></strong>
+				<span>2 days ago</span>
+			</div>
+		</div>
+		<div class="mdl-card__supporting-text"><%- post.content %></div>
 	</div>
-	<div class="mdl-card__supporting-text"><%- post.content %></div>
-</div>
 <%- partial('post/nav') %>
 <!-- <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
 	<a href="index.html" class="demo-nav__button">
