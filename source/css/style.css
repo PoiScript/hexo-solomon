@@ -189,22 +189,6 @@ img.article-image {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.c2{
-  background: url('/img/android.png') center;
-  background-repeat: no-repeat;
-}
-
-.c3{
-  background: url('/img/frontend.png') center;
-  background-repeat: no-repeat;
-}
-
-.c4{
-  background: url('../assets/demos/image_card.jpg') center / cover;
-}
-/*.logo-card .mdl-card__supporting-text {
-    background-color: #F5F5F5;
-}*/
 
 .material-icons {
   font-family: 'Material Icons';
@@ -242,4 +226,10 @@ img.article-image {
 
 .test {
   background-color: rgba(0, 0, 0, 0.2);  
+}
+
+.defalut-post-title {
+  background-image: url("/img/defalut.jpg");
+  /*background-position: center;*/
+/*  height: 280px;*/
 }
