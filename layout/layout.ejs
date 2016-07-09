@@ -1,11 +1,10 @@
 <%- partial('_partial/head') %>
-<body class="mdl-layout mdl-js-layout solomon-background">
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<body>
+	<div class="mdl-layout mdl-js-layout solomon-background">
 		<main>
-			<div class="top-spacer"></div>
-			<div class="mdl-grid max-width index">
-				<%- body %>
-			</div>
+			<div class="row-spacer mdl-layout--large-screen-only"></div>
+			<div class="mdl-grid max-width index"><%- body %></div>
+			<div class="row-spacer mdl-layout--large-screen-only"></div>
 		</main>
 	</div>
 </body>

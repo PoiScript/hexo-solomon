@@ -20,14 +20,14 @@
 <% if (site.posts.length){ %>
 <% site.posts.sort('date', -1).limit(1).each(function(post){ %>
 <div class="demo-card-event mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col defalut-post-title">
-  <div class="mdl-card__title mdl-card--expand test">
+  <div class="mdl-card__title mdl-card--expand deepen">
   <div class="mdl-card__title-text"><h4>
       Recent Post:<br>
       <%- post.title %>
     </h4>
     </div>
   </div>
-  <div class="mdl-card__actions mdl-card--border test">
+  <div class="mdl-card__actions mdl-card--border deepen">
     <i class="material-icons">format_list_bulleted</i>
     <span>Frontend</span>
     <i class="material-icons">event</i>

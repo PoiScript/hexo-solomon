@@ -1,8 +1,0 @@
-<% if (site.categories.length){ %>
-<% site.categories.each(function(category){ %>
-<a href="<%- category.path %>" class="mdl-card mdl-cell mdl-cell--4-col mdl-color--light-green-500">
-	<div class="mdl-card__title mdl-card--expand"></div>
-	<div class="mdl-card__actions category-name"><%- category.slug %></div>
-</a>
-<% }) %>
-<% } %>

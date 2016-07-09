@@ -90,6 +90,7 @@
 .max-width {
   max-width: 900px;
   width: 100%;
+  margin: auto;
 
 }
 
@@ -152,11 +153,6 @@
   text-align: right;
 }
 
-.index {
-  padding-top: 166px;
-  margin: auto;
-}
-
 .demo-blog .something-else .mdl-card__media {
   font-size: 13px;
   font-weight: 500;
@@ -195,8 +191,7 @@
   align-items:stretch;
 }
 
-.category-name{
-  text-decoration: none;
+.deepen-action{
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -204,8 +199,6 @@
   padding: 16px;
   background: rgba(0, 0, 0, 0.2);
 }
-
-
 
 .book-list {
   margin: 0;
@@ -216,21 +209,64 @@
   margin-right: 16px !important;
 }
 
-.test {
+.deepen {
   background-color: rgba(0, 0, 0, 0.2);  
 }
 
 .defalut-post-title {
   background-image: url("/img/defalut.jpg");
   /*background-position: center;*/
-/*  height: 280px;*/
-}
-
-.article-image {
-  height: 180px;
+  height: auto;
 }
 
 .unname {
   font-size: 20px;
   margin:auto;
+}
+
+.unnamed2 {
+  margin: auto;
+  height: 128px;
+  width: 128px;
+  padding-top: 52px;
+}
+
+.fab-card {
+  overflow: visible;
+}
+
+.fab-card .mdl-button--fab {
+  position: absolute;
+  right: 20px;
+  top: -28px;
+}
+
+.fab-card .mdl-card__supporting-text {
+  width: auto;
+}
+
+.post_entry .article-image {
+  height: 180px;
+}
+
+.post_entry .mdl-card__supporting-text {
+  padding-top: 0;
+}
+
+.category-defalut {
+  background-image: url("/img/category/defalut.svg");
+  background-position: center;
+  height: 30%;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.padding {
+  padding: 16px;
+}
+
+.row-spacer {
+  height: 166px;
 }

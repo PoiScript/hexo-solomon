@@ -4,8 +4,8 @@
 		<i class="material-icons" role="presentation">arrow_back</i>
 	</a>
 </div>
-<div class="mdl-card mdl-shadow--4dp mdl-cell--12-col max-width">
-	<div class="mdl-card__title defalut-post-title">
+<div class="mdl-card mdl-shadow--4dp mdl-cell--12-col max-width article">
+	<div class="mdl-card__title defalut-post-title <%- page.title %>">
 		<div class="mdl-card__title-text mdl-color-text--grey-50">
 			<h3><%- page.title %></h3>
 		</div>
@@ -14,7 +14,7 @@
 		<div class="minilogo"></div>
 		<div>
 			<strong><%- partial('post/category') %></strong>
-			<span>2 days ago</span>
+			<span><%- post.date.fromNow() %></span>
 		</div>
 	</div>
 	<div class="mdl-card__supporting-text"><%- post.content %></div>
