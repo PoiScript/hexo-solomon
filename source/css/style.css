@@ -2,12 +2,36 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(/css/font/material-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(/font/material-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
-       url(/css/font/material-icons/MaterialIcons-Regular.woff2) format('woff2'),
-       url(/css/font/material-icons/MaterialIcons-Regular.woff) format('woff'),
-       url(/css/font/material-icons/MaterialIcons-Regular.ttf) format('truetype');
+       url(/font/material-icons/MaterialIcons-Regular.woff2) format('woff2'),
+       url(/font/material-icons/MaterialIcons-Regular.woff) format('woff'),
+       url(/font/material-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 .solomon-background{
@@ -26,10 +50,6 @@
   color: #fff;
 }
 
-.c1 {
-  background: url('/img/1.png') center / cover;
-}
-
 .card-title {
 	max-width: 500px;
 	min-width: 300px;
@@ -44,11 +64,6 @@
 /*  display: block;
   max-height: 250px;
   max-width: 900px;*/
-  width: 100%;
-  height: auto;
-}
-
-img.article-image {
   width: 100%;
   height: auto;
 }
@@ -181,6 +196,7 @@ img.article-image {
 }
 
 .category-name{
+  text-decoration: none;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -190,30 +206,6 @@ img.article-image {
 }
 
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
 
 .book-list {
   margin: 0;
@@ -232,4 +224,13 @@ img.article-image {
   background-image: url("/img/defalut.jpg");
   /*background-position: center;*/
 /*  height: 280px;*/
+}
+
+.article-image {
+  height: 180px;
+}
+
+.unname {
+  font-size: 20px;
+  margin:auto;
 }
