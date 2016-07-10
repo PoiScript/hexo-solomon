@@ -10,13 +10,14 @@
 			<h3><%- page.title %></h3>
 		</div>
 	</div>
-	<div class="mdl-card__supporting-text meta">
-		<div class="minilogo"></div>
-		<div>
-			<strong><%- partial('post/category') %></strong>
-			<span><%- post.date.fromNow() %></span>
-		</div>
+	<div class="float">
+			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900 mini-logo" role="presentation">
+				<img src="/img/category/defalut.svg" class="mini-logo">
+			</button>
 	</div>
+		<div class="float">
+			<strong><%- partial('post/category') %><br><%- post.date.fromNow() %></strong>
+		</div>
 	<div class="mdl-card__supporting-text"><%- post.content %></div>
 </div>
 <%- partial('post/nav') %>

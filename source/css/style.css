@@ -270,3 +270,12 @@
 .row-spacer {
   height: 166px;
 }
+
+.mini-logo {
+  height: 60px;
+  width: 60px;
+}
+
+.float {
+  float: left;
+}
