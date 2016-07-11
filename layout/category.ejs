@@ -1,5 +1,6 @@
 <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-color--teal-400 fab-card">
-	<a class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent fab"
+	<a class="mdl-button mdl-js-ripple-effect mdl-js-button
+		mdl-button--fab mdl-color--accent fab mdl-shadow--4dp"
 		href="/" title="Back To Homepage">
 		<i class="material-icons mdl-color-text--white">keyboard_arrow_up</i>
 	</a>
@@ -9,6 +10,6 @@
 	<div class="mdl-card__actions deepen-action"><%- page.category %></div>
 </div>
 
-<% page.posts.each(function(post, i){ %>
-	<%- partial('_partial/post_entry', {post: post}) %>
+<% page.posts.each(function(post){ %>
+	<%- partial('_partial/card-post', {post: post}) %>
 <% }) %>

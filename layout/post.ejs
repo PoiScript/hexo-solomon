@@ -1,1 +1,48 @@
-<%- partial('_partial/article', {post: page, index: false}) %>
+<% page.categories.each(function(category){ %>
+<div class="demo-back">
+	<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+		href="/<%- category.path %>" title="go back" role="button">
+		<i class="material-icons" role="presentation">arrow_back</i>
+	</a>
+</div>
+
+<div class="mdl-card mdl-shadow--4dp mdl-cell--12-col article">
+	<div class="mdl-card__title defalut-post-title">
+		<div class="mdl-card__title-text mdl-color-text--grey-50">
+			<h3><%- page.title %></h3>
+		</div>
+	</div>
+	<div class="mdl-color-text--grey-700 mdl-card__supporting-text mdl-color--grey-100">
+		<a href="/<%- category.path %>"><div class="mini-logo left-float"></div></a>
+		<div class="left-float">
+			<strong class="meta"><%- category.slug %><br>
+				<%- page.date.fromNow() %></strong>
+		</div>
+		<% }) %>
+	</div>
+	<div class="mdl-card__supporting-text"><%- page.content %></div>
+</div>
+
+<% if (page.prev || page.next){ %>
+<nav class="article-nav">
+	<% if (page.prev){ %>
+		<a href="<%- url_for(page.prev.path) %>"
+			id="article-nav-newer" class="article-nav-link-wrap">
+			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900 mdl-shadow--4dp" role="presentation">
+		  		<i class="material-icons">arrow_back</i>
+			</button>
+	  		<strong class="article-nav-caption"><%= __('Newer') %></strong>
+		</a>
+	<% } %>
+	<% if (page.next){ %>
+		<div class="mdl-layout-spacer"></div>
+		<a href="<%- url_for(page.next.path) %>"
+			id="article-nav-older" class="article-nav-link-wrap">
+			<strong class="article-nav-caption"><%= __('Older') %></strong>
+			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900 mdl-shadow--4dp" role="presentation">
+				<i class="material-icons">arrow_forward</i>
+			</button>
+		</a>
+	<% } %>
+</nav>
+<% } %>
