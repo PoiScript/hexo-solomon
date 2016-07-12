@@ -1,9 +1,21 @@
 <%- partial('_partial/card-recent') %>
 <%- partial('_partial/card-logo') %>
-	<% if (site.categories.length){ %>
-	<% site.categories.each(function(category){ %>
-		<%- partial('_partial/card-category', {category: category}) %>
-	<% }) %>
+	<% if (var cat = site.categories.length){ %>
+		<% if (cat <= 3 || cat = 6){ %>
+			<% site.categories.each(function(category){ %>
+				<%- partial('_partial/card-category', {category: category}) %>
+			<% }) %>
+		<% } else if (cat <= 5) { %>
+			<% site.categories.each(function(category){ %>
+				<%- partial('_partial/card-category', {category: category}) %>
+			<% }) %>
+			<%- partial('_partial/card-all-category') %>
+		<% } else { %>
+			<% site.categories.each(function(category){ %>
+				<%- partial('_partial/card-category', {category: category}) %>
+			<% }) %>
+			<%- partial('_partial/card-all-category') %>
+		<% } %>
 	<% } %>
 <%- partial('_partial/card-dashboard') %>
 <%- partial('_partial/card-archive') %>
