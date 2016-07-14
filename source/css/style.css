@@ -304,8 +304,28 @@
 }
 
 .card-category {
-  width: 23%;
-  margin: 5px;
+  width: 10%;
+  margin: 2px;
   float: left;
   display: inline;
+}
+
+.category-row{
+  width: 250%;
+  transform: translateX(-10%);
+}
+
+.button_row {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.controls_prev {
+  left: 10px;
+}
+
+.controls_next {
+  right: 10px;
+  float: right;
 }
