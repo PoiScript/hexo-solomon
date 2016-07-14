@@ -1,8 +1,19 @@
-<div class="mdl-card mdl-cell mdl-cell--4-col mdl-color--teal-400">
-<a href="<%- category.path %>">
-	<div class="mdl-card__title mdl-card--expand">
-		<img src="/img/category/defalut.svg" class="unnamed2">
+<div class="mdl-card mdl-cell mdl-cell--12-col mdl-color--blue-grey-50">
+	<div class="mdl-card__title mdl-shadow--12dp mdl-color--white">
+		<h5 class="mdl-card__title-text">Category</h5>
 	</div>
-</a>
-	<div class="mdl-card__actions deepen-action"><%- category.slug %></div>
+	<div class="mdl-card__supporting-text max-width">
+<% if (site.categories.length){ %>
+	<% site.categories.each(function(category){ %>
+	<div class="mdl-card mdl-shadow--16dp card-category mdl-color--blue-grey">
+		<a href="<%- category.path %>">
+			<div class="mdl-card__title mdl-card--expand">
+				<img src="/img/category/defalut.svg" class="unnamed2">
+			</div>
+		</a>
+		<div class="mdl-card__actions deepen-action"><%- category.slug %></div>
+	</div>
+	<% }) %>
+<% }%>
+	</div>
 </div>

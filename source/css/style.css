@@ -302,3 +302,10 @@
 .meta {
   padding: 0 0;
 }
+
+.card-category {
+  width: 23%;
+  margin: 5px;
+  float: left;
+  display: inline;
+}

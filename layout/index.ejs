@@ -1,8 +1,4 @@
 <%- partial('_partial/card-recent') %>
 <%- partial('_partial/card-logo') %>
+<%- partial('_partial/card-category') %>
 <%- partial('_partial/card-dashboard') %>
-	<% if (site.categories.length){ %>
-	<% site.categories.each(function(category){ %>
-		<%- partial('_partial/card-category', {category: category}) %>
-	<% }) %>
-	<% }%>
