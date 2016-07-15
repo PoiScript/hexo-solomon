@@ -2,7 +2,19 @@
 	<div class="mdl-card__title mdl-shadow--12dp mdl-color--white">
 		<h5 class="mdl-card__title-text">Category</h5>
 	</div>
-	<div class="mdl-card__supporting-text category-row">
+	<nav class="button_row">
+		<button class="mdl-button mdl-js-ripple-effect mdl-js-button
+			mdl-button--fab mdl-color--accent fab mdl-shadow--4dp controls_prev"
+			id="b1">
+			<i class="material-icons mdl-color-text--white">keyboard_arrow_left</i>
+		</button>
+		<button class="mdl-button mdl-js-ripple-effect mdl-js-button
+			mdl-button--fab mdl-color--accent fab mdl-shadow--4dp controls_next"
+			id="b2">
+			<i class="material-icons mdl-color-text--white">keyboard_arrow_right</i>
+		</button>
+	</nav>
+	<div class="mdl-card__supporting-text" id="category-row">
 <% if (site.categories.length){ %>
 	<% site.categories.each(function(category){ %>
 	<div class="mdl-card card-category mdl-color--blue-grey">
@@ -17,15 +29,6 @@
 	</div>
 	<% }) %>
 <% }%>
+
 	</div>
-	<nav class="button_row">
-		<button class="mdl-button mdl-js-ripple-effect mdl-js-button
-			mdl-button--fab mdl-color--accent fab mdl-shadow--4dp controls_prev">
-			<i class="material-icons mdl-color-text--white">keyboard_arrow_left</i>
-		</button>
-		<button class="mdl-button mdl-js-ripple-effect mdl-js-button
-			mdl-button--fab mdl-color--accent fab mdl-shadow--4dp controls_next">
-			<i class="material-icons mdl-color-text--white">keyboard_arrow_right</i>
-		</button>
-	</nav>
 </div>
