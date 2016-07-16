@@ -7,7 +7,19 @@
 	<div class="mdl-card__title mdl-card--expand">
 		<img src="/img/category/defalut.svg" class="unnamed2">
 	</div>
-	<div class="mdl-card__actions deepen-action"><%- page.category %></div>
+	<div class="mdl-card__actions deepen-action"><%- page.category %>
+		<button id="demo_menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon" data-upgraded=",MaterialButton">
+			<i class="material-icons">keyboard_arrow_down</i>
+		</button>
+		<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+			for="demo_menu-lower-left">
+		<% if (site.categories.length){ %>
+			<% site.categories.each(function(category){ %>
+				<a href="/<%- category.path %>"><li class="mdl-menu__item"><%- category.slug %></li></a>
+			<% }) %>
+		<% }%>
+		</ul>
+	</div>
 </div>
 <% page.posts.each(function(post){ %>
 	<%- partial('_partial/card-post', {post: post}) %>
