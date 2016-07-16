@@ -9,7 +9,6 @@
 	</div>
 	<div class="mdl-card__actions deepen-action"><%- page.category %></div>
 </div>
-
 <% page.posts.each(function(post){ %>
 	<%- partial('_partial/card-post', {post: post}) %>
 <% }) %>

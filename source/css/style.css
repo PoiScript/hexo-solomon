@@ -312,6 +312,7 @@
 
 #category-row{
   width: 250%;
+  transition: all 0.75s;
 }
 
 .button_row {
