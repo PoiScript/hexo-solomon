@@ -1,22 +1,3 @@
-<style>
-.demo-card-event > .mdl-card__actions {
-	border-color: rgba(255, 255, 255, 0.4);
-}
-.demo-card-event > .mdl-card__actions {
-	display: flex;
-	box-sizing:border-box;
-	align-items: center;
-}
-.demo-card-event > .mdl-card__actions > .material-icons {
-	padding-right: 5px;
-	padding-left: 10px;
-}
-.demo-card-event > .mdl-card__title,
-.demo-card-event > .mdl-card__actions,
-.demo-card-event > .mdl-card__actions > .mdl-button {
-	color: #fff;
-}
-</style>
 <% if (site.posts.length){ %>
 <% site.posts.sort('date', -1).limit(1).each(function(post){ %>
 <div class="demo-card-event mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col defalut-post-title">
