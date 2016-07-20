@@ -1,8 +1,35 @@
-<div class="mdl-card mdl-cell mdl-cell--4-col c4 mdl-color--blue-grey-800">
-<a href="/dashboard">
-	<div class="mdl-card__title mdl-card--expand">
-		<img src="/img/category/method-draw-image.svg" class="unnamed2">
+<div class="mdl-card mdl-cell mdl-cell--12-col mdl-color--blue-grey-50">
+	<div class="mdl-card__title mdl-shadow--12dp mdl-color--white">
+		<i class="material-icons">dashboard</i>
+		<h5 class="mdl-card__title-text">Dashboard</h5>
 	</div>
-</a>
-	<div class="mdl-card__actions deepen-action">Dashboard</div>
+	<div class="mdl-card__supporting-text mdl-grid">
+		<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col mdl-color--blue-grey-500">
+			<div class="mdl-card__title">
+				<h4>Posts: <%- site.posts.length %><br>
+					Categories: <%- site.categories.length %><br>
+					Tags: <%- site.tags.length %><br>
+					<% site.posts.sort('date', -1).limit(1).each(function(post){ %>
+					Update: <%- post.date.format('ll') %>
+					<% }) %>
+				</h4>
+			</div>
+		</div>
+		<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = new google.visualization.DataTable();
+				data.addColumn('string', 'Topping');
+				data.addColumn('number', 'Slices');
+				data.addRows([
+					<% site.categories.each(function(category){ %>
+					['<%- category.slug %>', <%- category.length %>],
+					<% }) %>]);
+		var options = {'title':'Categories'};
+		var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+		chart.draw(data, options);}
+		</script>
+		<div class="mdl-card mdl-cell mdl-cell--8-col" id="chart_div"></div>
+	</div>
 </div>
