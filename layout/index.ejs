@@ -1,7 +1,18 @@
-<% site.posts.each(function(post){ %>
-	<p><%- config.root %><%- post.path %><br></p>
-<% }) %>
-<%- partial('_partial/card-recent') %>
-<%- partial('_partial/card-logo') %>
-<%- partial('_partial/card-category') %>
-<%- partial('_partial/card-dashboard') %>
+<div class="parallax-container">
+	<nav class="semi-transparent"><%- partial('_partial/header') %></nav>
+  <div class="parallax"><img src="parallax image"></div>
+</div>
+<div class="row">
+	<div class="col s9">
+		<%- partial('_partial/index/about') %>
+		<%- partial('_partial/index/blog') %>
+		<%- partial('_partial/index/friendly_links') %>
+	</div>
+	<div class="col s3">
+		<ul class="section table-of-contents">
+			<li><a href="#about">About</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#links">Links</a></li>
+		</ul>
+	</div>
+</div>

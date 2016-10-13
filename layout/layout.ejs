@@ -1,18 +1,15 @@
-<head>
-	<title><%= config.title %></title>
-	<link rel="stylesheet" href="/css/material.min.css">
-	<link rel="stylesheet" href="/css/style.css">
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-</head>
-<body>
-	<div class="mdl-layout mdl-js-layout solomon-background">
-		<main>
-			<div class="row-spacer mdl-layout--large-screen-only"></div>
-			<div class="mdl-grid max-width index"><%- body %></div>
-			<div class="row-spacer mdl-layout--large-screen-only"></div>
-		</main>
-	</div>
-	<script src="/js/material.min.js"></script>
-	<script src="/js/script.js" ></script>
-
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="/css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title><%= config.title %></title>
+	</head>
+	<body>
+		<main><%- body %></main>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></scriss>
+		<script type="text/javascript" src="/js/materialize.min.js"></script>
+		<script type="text/javascript" src="/js/init.js"></script>
+	</body>
+</html>
