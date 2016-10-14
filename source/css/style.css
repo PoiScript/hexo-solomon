@@ -5,3 +5,16 @@
 .semi-transparent {
   background-color: rgba(0,0,0,0.3) !important;
 }
+img.plax-img {
+  position: absolute;
+}
+div#shell {
+  position: relative;
+  margin: -60px auto;
+  width: 700px;
+  height: 700px;
+  z-index: -999;
+}
+img#plax-front {
+  z-index: 4;
+}

@@ -17,7 +17,11 @@
   </div>
   <div class="col s3">
     <h5 class="header">Tag</h5>
-    <p class="grey-text text-darken-3 lighten-3"><%= theme.introduction %></p>
+    <% if (site.tags.length){ %>
+      <%- list_tags({show_count: theme.show_count}) %>
+    <% } else { %>
+      <p>No tag found :(</p>
+    <% } %>
     <p><a class="waves-effect waves-light btn">button</a></p>
   </div>
 </div>
