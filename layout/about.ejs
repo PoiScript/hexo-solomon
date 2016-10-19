@@ -13,8 +13,14 @@
       </div>
       <div class='section white'>
         <div class='row container'>
-          <% scrollspy(page.content) %>
-          <%- page.content %>
+          <div class='col s10'>
+            <%- page.content %>
+          </div>
+            <div class="col s2">
+              <div class="toc-wrapper">
+                <%- scrollspy(page.content) %>
+              </div>
+          </div>
         </div>
       </div>
     </main>

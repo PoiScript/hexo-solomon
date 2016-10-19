@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <% include includes/head %>
+    <link rel='stylesheet' href='/css/blog.css'>
+  </head>
+  <body>
+    <main>
+      <div class='ribbon'>
+        <% include includes/header %>
+      </div>
+      <div class='row blog-container'>
+        <div class='col s8 offset-s2 card'>
+          <% if (site.posts.length){ %>
+            <div id="recent" class="section scrollspy">
+              <h3><%= __('recent_posts') %></h3>
+              <div class="slider">
+                <ul class="slides">
+                  <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+                    <li>
+                      <img>
+                      <div class="caption center-align">
+                        <h3><%= post.title || '(no title)' %></h3>
+                        <% tags(post.tags) %>
+                        <a class='waves-effect waves-light btn' href="<%- url_for(post.path) %>">Read More</a>
+                      </div>
+                    </li>
+                  <% }) %>
+                </ul>
+              </div>
+            </div>
+            <div id="tags" class="section scrollspy">
+              <h3><%= __('tags') %></h3>
+              <% if (site.tags && site.tags.length) { %>
+                <%- tags(site.tags) %>
+              <% } else { %>
+                <p> No Tag Found :( </p>
+              <% } %>
+            </div>
+            <div id="categories" class="section scrollspy">
+              <h3><%= __('categories') %></h3>
+              <% if (site.tags && site.tags.length) { %>
+                <i class="material-icons"><%- theme.icon['android'] %></i>
+              <% } else { %>
+                <p> No Tag Found :( </p>
+              <% } %>
+            </div>
+          <% } %>
+        </div>
+        <div class='col s2'>
+          <ul class="section table-of-contents">
+            <li><a href="#recent"><%= __('recent_posts') %></a></li>
+            <li><a href="#tags"><%= __('tags') %></a></li>
+            <li><a href="#categories"><%= __('categories') %></a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <% include includes/script %>
+    <script src="/js/blog.js"></script>
+  </body>
+</html>

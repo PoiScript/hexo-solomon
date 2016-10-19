@@ -19,6 +19,5 @@ hexo.extend.helper.register('scrollspy', (str, options) => {
   }
 
   result += '</ul>'
-  console.log(result)
   return result
 })
