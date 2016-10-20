@@ -6,5 +6,4 @@ $(document).ready(function () {
   $('#plax-3').plaxify({"xRange":40,"yRange":40})
   $.plax.enable()
   $(".button-collapse").sideNav()
-  $('.materialboxed').materialbox();
 })

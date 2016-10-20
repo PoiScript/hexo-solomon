@@ -1,12 +1,10 @@
 'use strict'
 var cheerio
 
-hexo.extend.helper.register('scrollspy', (str, options) => {
-  options = options || {}
+hexo.extend.helper.register('scrollspy', (str) => {
   if (!cheerio) cheerio = require('cheerio')
 
   var $ = cheerio.load(str)
-  var headingsMaxDepth = options.hasOwnProperty('max_depth') ? options.max_depth : 6
   var headingsSelector = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].slice(0, 6).join(',')
   var headings = $(headingsSelector)
 

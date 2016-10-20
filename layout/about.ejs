@@ -8,11 +8,12 @@
       <div class='parallax-container'>
         <% include includes/header %>
         <div class='parallax'>
-          <img id='parallax-img' src='/img/bg1.jpg'>
+          <img id='parallax-img' src='/img/bg.jpg'>
         </div>
       </div>
-      <div class='section white'>
-        <div class='row container'>
+      <div class='row margin-top-container'>
+        <div class='col s10 offset-s1 card row'>
+          <h1><%- page.title %></h1>
           <div class='col s10'>
             <%- page.content %>
           </div>
@@ -25,6 +26,6 @@
       </div>
     </main>
     <% include includes/script %>
-    <script src='/js/about.js'></script>
+    <script src='/js/post.js'></script>
   </body>
 </html>

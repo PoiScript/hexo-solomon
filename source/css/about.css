@@ -1,6 +1,5 @@
 .parallax-container {
-  height: 400px;
-}
-img#parallax-img {
-  width: auto;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
 }
